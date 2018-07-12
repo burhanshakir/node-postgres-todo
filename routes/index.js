@@ -126,5 +126,9 @@ router.delete('/api/v1/todos/:todo_id', (req, res, next) => {
     });
 });
 
+router.get('/', (req, res, next) => {
+    res.sendFile('index.html');
+});
+
 
 module.exports = router;
